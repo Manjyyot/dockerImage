@@ -9,7 +9,7 @@ README.md: Documentation that explains the purpose of the files and the steps to
 
 Steps to Build and Run:
 Clone the repository:
-git clone [https://github.com/your-username/docker-html-nginx.git](https://github.com/Manjyyot/dockerImage.git)
+git clone [https://github.com/your-username/dockerImage.git](https://github.com/Manjyyot/dockerImage.git)
 
 Build the Docker image:
 docker build -t nginx-image .
