@@ -19,6 +19,14 @@ docker run -p 80:80 docker-html-nginx
 
 Visit the HTML page: Open your browser and go to http://localhost:80. You should see the "Hello, Docker!" page.
 
+Pushing Docker Image to ECR
+Create a Public Repository in AWS ECR.
+Login to ECR using AWS CLI.
+Tag and Push the Docker image to ECR:
+
+docker tag nginx-image:latest <aws_account_id>.dkr.ecr.<your-region>.amazonaws.com/nginx-repo:latest
+docker push <aws_account_id>.dkr.ecr.<your-region>.amazonaws.com/nginx-repo:latest
+
 ECR Repository:
 The Docker image has been pushed to an Amazon Elastic Container Registry (ECR). You can pull and run the image from there:
 docker pull manjyot-nginx-docker
